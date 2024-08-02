@@ -27,6 +27,7 @@ The CSSC algorithm is based on the paper "Semi-Supervised Clustering Under a 'Co
   ```bash
   cssc = CSSCClassifier(alpha=0.7, max_iter=100)
   cssc.fit(X_labeled, y_labeled, X_unlabeled)
+   ```
 4. Predict the new data
   ```bash
   y_pred = cssc.predict(X_test)
